@@ -11,9 +11,9 @@ services:
     ports:
       - "4873:4873"
     volumes:
-      - "./storage:/data/storage"
-      - "./config:/data/conf"
-      - "./plugins:/data/plugins"
+      - "./data/storage:/verdaccio/storage"
+      - "./data/config:/verdaccio/conf"
+      - "./data/plugins:/verdaccio/plugins"
 networks:
   node-network:
     driver: bridge
